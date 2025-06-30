@@ -29,6 +29,19 @@ const HeroPage = () => {
         </div>
       </div>
       <HeroCarousel images={images} />
+      <div className={styles["hero-description"]}>
+        <h3>
+          RDG Construções: Sua Visão, Nossa Realidade. Construindo o Futuro com
+          Solidez.
+        </h3>
+        <p>
+          Desde 2016, a RDG Construções LTDA é a sua parceira ideal para
+          transformar ideias em realidade. Com sede em Florianópolis, somos
+          referência em qualidade, segurança e inovação no setor de engenharia e
+          construção civil. Conte com quem entende do assunto para construir o
+          futuro.{" "}
+        </p>
+      </div>
     </section>
   );
 };
