@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import HeroPage from "./pages/Hero/HeroPage";
 import InfoPage from "./pages/InfoPage/InfoPage";
+import ServicosPage from "./pages/ServicosPage/ServicosPage";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HeroPage />} />
           <Route path="/sobre" element={<InfoPage />} />
+          <Route path="/servicos" element={<ServicosPage />} />
         </Routes>
       </div>
       <Footer />
