@@ -22,7 +22,7 @@ const Navbar = () => {
             <a href="#contato">Contato</a>
           </li>
           <li>
-            <a href="#obras">Obras Realizadas</a>
+            <a href="/servicos">Nossos Serviços</a>
           </li>
         </ul>
       </div>

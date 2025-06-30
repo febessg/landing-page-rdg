@@ -1,0 +1,96 @@
+.servicos-page {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 6.5em;
+}
+
+.servicos-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #b91c1c;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+}
+
+.servicos-description {
+  font-size: 1.15rem;
+  color: #222;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.servicos-subtitle {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #b91c1c;
+  margin-bottom: 1.2rem;
+  margin-top: -0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.servicos-list {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto 0 auto;
+  padding-left: 1.2em;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.servicos-list li {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 1.1em 1.2em 1em 1.2em;
+  margin-bottom: 0.7em;
+  box-shadow: 0 2px 8px #0001;
+  color: #222;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  list-style: none;
+  transition: box-shadow 0.2s;
+}
+
+.servicos-list li strong {
+  color: #b91c1c;
+  font-weight: bold;
+  font-size: 1.08rem;
+}
+
+.servicos-list li:hover {
+  box-shadow: 0 4px 16px #0002;
+}
+
+@media (max-width: 750px) {
+  .servicos-page {
+    padding-top: 200px;
+  }
+  .servicos-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+  .servicos-description {
+    font-size: 0.98rem;
+  }
+  .servicos-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 0.7rem;
+  }
+  .servicos-list {
+    max-width: 98vw;
+    font-size: 0.98rem;
+    gap: 0.7rem;
+  }
+  .servicos-list li {
+    font-size: 0.98rem;
+    padding: 0.9em 0.7em 0.8em 0.7em;
+  }
+}
