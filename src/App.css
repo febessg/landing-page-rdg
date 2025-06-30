@@ -17,5 +17,5 @@ html,
 
 .app-content {
   flex: 1;
-  padding-top: 70px; /* Ajuste conforme a altura da navbar */
+  padding-top: 120px;
 }

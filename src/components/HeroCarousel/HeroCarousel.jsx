@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function getSlidesPerView() {
   if (window.innerWidth < 600) return 1;
-  if (window.innerWidth < 900) return 2;
+  if (window.innerWidth < 901) return 2;
   if (window.innerWidth < 1200) return 3;
   return 4;
 }

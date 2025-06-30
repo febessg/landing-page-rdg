@@ -6,6 +6,7 @@ import img2 from "../../assets/images/hero-img-2.jpeg";
 import img3 from "../../assets/images/hero-img-3.jpeg";
 import img4 from "../../assets/images/hero-img-4.jpeg";
 import img5 from "../../assets/images/hero-img-5.jpeg";
+import { FaWhatsapp } from "react-icons/fa";
 
 const images = [
   { src: img1, alt: "Obra 1" },
@@ -42,6 +43,10 @@ const HeroPage = () => {
           futuro.{" "}
         </p>
       </div>
+      <button className={styles["whatsapp-btn"]}>
+        <FaWhatsapp size={22} style={{ marginRight: 8 }} />
+        Solicite um orçamento
+      </button>
     </section>
   );
 };
