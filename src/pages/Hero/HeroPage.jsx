@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./HeroPage.module.css";
-import img1 from "../../assets/hero-img-1.jpeg";
-import img2 from "../../assets/hero-img-2.jpeg";
-import img3 from "../../assets/hero-img-3.jpeg";
-import img4 from "../../assets/hero-img-4.jpeg";
-import img5 from "../../assets/hero-img-5.jpeg";
+import HeroImages from "../../components/HeroImages/HeroImages";
+
+const images = [
+  { src: require("../../assets/images/hero-image-1.jpg"), alt: "Obra 1" },
+  { src: require("../../assets/images/hero-image-2.jpg"), alt: "Obra 2" },
+  { src: require("../../assets/images/hero-image-3.jpg"), alt: "Obra 3" },
+  { src: require("../../assets/images/hero-image-4.jpg"), alt: "Obra 4" },
+];
 
 const HeroPage = () => {
   return (
@@ -19,14 +22,7 @@ const HeroPage = () => {
           <strong>segurança</strong> e <strong>inovação</strong>.
         </div>
       </div>
-      <div className={styles["hero-images-container"]}>
-        {/* Substitua os src abaixo pelas imagens reais desejadas */}
-        <img className={styles["hero-image"]} src={img1} alt="Obra 1" />
-        <img className={styles["hero-image"]} src={img2} alt="Obra 2" />
-        <img className={styles["hero-image"]} src={img3} alt="Obra 3" />
-        <img className={styles["hero-image"]} src={img4} alt="Obra 4" />
-        <img className={styles["hero-image"]} src={img5} alt="Obra 5" />
-      </div>
+      <HeroImages images={images} />
     </section>
   );
 };
