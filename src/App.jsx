@@ -1,11 +1,15 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
-      {/* Projeto limpo. Pronto para começar do zero! */}
+      <div className="app-content">
+        {/* Projeto limpo. Pronto para começar do zero! */}
+      </div>
+      <Footer />
     </div>
   );
 }
