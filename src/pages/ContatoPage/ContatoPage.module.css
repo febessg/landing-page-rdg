@@ -1,0 +1,39 @@
+.contato-page {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 6.5em;
+}
+
+.contato-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #b91c1c;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+}
+
+.contato-description {
+  font-size: 1.15rem;
+  color: #222;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 750px) {
+  .contato-page {
+    padding-top: 200px;
+  }
+  .contato-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+  .contato-description {
+    font-size: 0.98rem;
+  }
+}
