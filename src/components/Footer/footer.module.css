@@ -1,0 +1,34 @@
+.footer {
+  width: 100vw;
+  background: #fff;
+  box-shadow: 0 -2px 8px #0001;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1.5rem 0 1.2rem 0;
+  min-height: 90px;
+  margin-top: 3rem;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #b91c1c;
+  font-size: 0.95rem;
+}
+
+.footer-brand {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #b91c1c;
+}
+
+.footer-since {
+  font-size: 0.8rem;
+  color: #444;
+  margin-top: 0.15rem;
+}
