@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./HeroImages.module.css";
+import styles from "./HeroCarousel.module.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function getSlidesPerView() {
@@ -9,7 +9,7 @@ function getSlidesPerView() {
   return 4;
 }
 
-const HeroImages = ({ images }) => {
+const HeroCarousel = ({ images }) => {
   const [current, setCurrent] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(getSlidesPerView());
   const total = images.length;
@@ -66,4 +66,4 @@ const HeroImages = ({ images }) => {
   );
 };
 
-export default HeroImages;
+export default HeroCarousel;

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./HeroPage.module.css";
-import HeroImages from "../../components/HeroImages/HeroImages";
+import HeroCarousel from "../../components/HeroCarousel/HeroCarousel";
 import img1 from "../../assets/images/hero-img-1.jpeg";
 import img2 from "../../assets/images/hero-img-2.jpeg";
 import img3 from "../../assets/images/hero-img-3.jpeg";
@@ -28,7 +28,7 @@ const HeroPage = () => {
           <strong>segurança</strong> e <strong>inovação</strong>.
         </div>
       </div>
-      <HeroImages images={images} />
+      <HeroCarousel images={images} />
     </section>
   );
 };
