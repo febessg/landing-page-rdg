@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ProjetosPage.module.css";
+import ProjetosCard from "../../components/ProjetosCard/ProjetosCard";
 
 const projetos = [
   {
@@ -72,21 +73,12 @@ const ProjetosPage = () => {
       </p>
       <ul className={styles["projetos-list"]}>
         {projetos.map((projeto, idx) => (
-          <li key={idx} className={styles["projeto-item"]}>
-            <img
-              src={projeto.imagem}
-              alt={projeto.titulo}
-              className={styles["projeto-img"]}
-              width={120}
-              height={90}
-            />
-            <div className={styles["projeto-info"]}>
-              <span className={styles["projeto-titulo"]}>{projeto.titulo}</span>
-              <span className={styles["projeto-descricao"]}>
-                {projeto.descricao}
-              </span>
-            </div>
-          </li>
+          <ProjetosCard
+            key={idx}
+            imagem={projeto.imagem}
+            titulo={projeto.titulo}
+            descricao={projeto.descricao}
+          />
         ))}
       </ul>
     </div>
