@@ -8,6 +8,8 @@
   box-sizing: border-box;
   text-align: center;
   padding-top: 6.5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .projetos-title {
@@ -39,7 +41,7 @@
   width: 100%;
   max-width: 700px;
   margin: 2rem auto 0 auto;
-  padding-left: 1.2em;
+  padding-left: 0;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -61,6 +63,9 @@
   line-height: 1.6;
   list-style: none;
   transition: box-shadow 0.2s;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
 }
 
 .projeto-img {
@@ -73,6 +78,7 @@
   background: #eee;
   margin-bottom: 0.7em;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
 }
 
 .projeto-item:hover .projeto-img {
@@ -87,6 +93,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .projeto-titulo {
@@ -97,6 +104,7 @@
   margin-bottom: 0.4em;
   margin-top: 0.2em;
   letter-spacing: 0.01em;
+  word-break: break-word;
 }
 
 .projeto-descricao {
@@ -104,6 +112,7 @@
   color: #222;
   margin-bottom: 0.1em;
   line-height: 1.6;
+  word-break: break-word;
 }
 
 .projetos-list li {
@@ -129,9 +138,22 @@
   box-shadow: 0 4px 16px #0002;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
+  .projetos-list,
+  .projeto-item {
+    max-width: 98vw;
+  }
+  .projeto-img,
+  .projeto-info {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 600px) {
   .projetos-page {
-    padding-top: 200px;
+    padding-top: 120px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
   }
   .projetos-title {
     font-size: 1.3rem;
@@ -145,19 +167,19 @@
     margin-bottom: 0.7rem;
   }
   .projetos-list {
-    max-width: 98vw;
-    font-size: 0.98rem;
     gap: 0.7rem;
   }
   .projeto-item {
-    padding: 1em 0.5em 0.8em 0.5em;
-    font-size: 0.98rem;
+    padding: 0.7em 0.2em 0.7em 0.2em;
+    font-size: 0.96rem;
   }
   .projeto-img {
-    max-width: 98vw;
-    height: 180px;
+    height: 130px;
   }
-  .projeto-info {
-    max-width: 98vw;
+  .projeto-titulo {
+    font-size: 1.02rem;
+  }
+  .projeto-descricao {
+    font-size: 0.93rem;
   }
 }
