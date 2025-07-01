@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ContatoPage.module.css";
+import ContatoForm from "../../components/ContatoForm/ContatoForm";
 
 const ContatoPage = () => {
   return (
@@ -10,6 +11,7 @@ const ContatoPage = () => {
         tirar dúvidas ou saber mais sobre nossos serviços. Estamos prontos para
         atender você!
       </p>
+      <ContatoForm />
     </div>
   );
 };
