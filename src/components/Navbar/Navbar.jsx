@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import styles from "./navbar.module.css";
+import { MdMenu } from "react-icons/md";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles["navbar-content"]}>
@@ -11,7 +16,18 @@ const Navbar = () => {
             <img src={logo} alt="Logo RDG Construções EIRELI" height={48} />
           </a>
         </div>
-        <ul className={styles["navbar-links"]}>
+        <button
+          className={styles["menu-toggle"]}
+          onClick={toggleMenu}
+          aria-label="Abrir/fechar menu"
+        >
+          <MdMenu size={32} color="#b91c1c" />
+        </button>
+        <ul
+          className={
+            styles["navbar-links"] + (menuOpen ? " " + styles["open"] : "")
+          }
+        >
           <li>
             <a href="/">Home</a>
           </li>
