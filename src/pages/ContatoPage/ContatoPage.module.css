@@ -1,0 +1,85 @@
+.contato-page {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 6.5em;
+}
+
+.contato-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #b91c1c;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+}
+
+.contato-subtitle {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #b91c1c;
+  margin-bottom: 1.2rem;
+  margin-top: -0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.contato-description {
+  font-size: 1.15rem;
+  color: #222;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.contato-info {
+  background: #f3f4f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5rem 2vw 1.2rem 2vw;
+  margin: 1.5rem auto 0 auto;
+  max-width: 540px;
+  width: 100%;
+  color: #222;
+  font-size: 1.08rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.contato-info strong {
+  color: #b91c1c;
+}
+
+@media (max-width: 750px) {
+  .contato-page {
+    padding-top: 200px;
+  }
+  .contato-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+  .contato-description {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contato-info {
+    max-width: 80vw;
+    padding: 1.2rem 4vw;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-info {
+    max-width: 80vw;
+    padding: 1rem 2vw;
+    font-size: 0.95rem;
+  }
+}
