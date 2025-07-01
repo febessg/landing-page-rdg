@@ -5,9 +5,10 @@ const InfoPage = () => {
   return (
     <div className={styles["info-page"]}>
       <div className={styles["info-description"]}>
-        <h1 className={styles["info-title"]}>
-          Quem somos: A Base da Nossa Paixão por Construir
-        </h1>
+        <h1 className={styles["info-title"]}>Quem somos:</h1>
+        <span className={styles["info-subtitle"]}>
+          A Base da Nossa Paixão por Construir
+        </span>
         <p>
           A RDG Construções LTDA, fundada em 1º de dezembro de 2016, nasceu com
           o propósito de construir não apenas edifícios, mas também relações
