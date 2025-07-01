@@ -1,5 +1,5 @@
 .servicos-page {
-  background: #fff;
+  background: var(--gradient-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,29 +7,36 @@
   justify-content: flex-start;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 6.5em;
+  padding-top: var(--page-padding-desktop);
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .servicos-title {
-  font-size: 2.2rem;
+  font-size: var(--title-size-desktop);
   font-weight: bold;
-  color: #b91c1c;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1.2rem;
   margin-top: 0;
 }
 
 .servicos-description {
-  font-size: 1.15rem;
-  color: #222;
+  font-size: var(--text-size-desktop);
+  color: var(--text-secondary);
   max-width: 700px;
   margin-bottom: 2.5rem;
+  text-align: center;
+  padding: 0 1em;
 }
 
 .servicos-subtitle {
   display: block;
-  font-size: 1.5rem;
+  font-size: var(--subtitle-size-desktop);
   font-weight: 400;
-  color: #b91c1c;
+  color: var(--primary-color);
   margin-bottom: 1.2rem;
   margin-top: -0.5rem;
   letter-spacing: 0.01em;
@@ -47,50 +54,90 @@
 }
 
 .servicos-list li {
-  background: #f3f4f6;
-  border-radius: 8px;
+  background: var(--bg-card);
+  border-radius: 12px;
   padding: 1.1em 1.2em 1em 1.2em;
   margin-bottom: 0.7em;
-  box-shadow: 0 2px 8px #0001;
-  color: #222;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
   font-size: 1.08rem;
   line-height: 1.6;
   list-style: none;
-  transition: box-shadow 0.2s;
+  transition: all 0.3s ease;
 }
 
 .servicos-list li strong {
-  color: #b91c1c;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 1.08rem;
 }
 
 .servicos-list li:hover {
-  box-shadow: 0 4px 16px #0002;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .servicos-page {
-    padding-top: 200px;
+    padding-top: var(--page-padding-tablet);
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
   .servicos-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.7rem;
+    font-size: var(--title-size-tablet);
   }
+
   .servicos-description {
-    font-size: 0.98rem;
+    font-size: var(--text-size-tablet);
   }
+
   .servicos-subtitle {
-    font-size: 0.92rem;
+    font-size: var(--subtitle-size-tablet);
+  }
+
+  .servicos-list {
+    max-width: 95vw;
+    gap: 1rem;
+  }
+
+  .servicos-list li {
+    font-size: var(--text-size-tablet);
+    padding: 1em 1em 0.9em 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicos-page {
+    padding-top: var(--page-padding-mobile);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .servicos-title {
+    font-size: var(--title-size-mobile);
     margin-bottom: 0.7rem;
   }
+
+  .servicos-description {
+    font-size: var(--text-size-mobile);
+    width: 90vw;
+    padding: 0 0.5em;
+  }
+
+  .servicos-subtitle {
+    font-size: var(--subtitle-size-mobile);
+    margin-bottom: 0.7rem;
+  }
+
   .servicos-list {
-    max-width: 98vw;
-    font-size: 0.98rem;
+    max-width: 95vw;
     gap: 0.7rem;
   }
+
   .servicos-list li {
-    font-size: 0.98rem;
-    padding: 0.9em 0.7em 0.8em 0.7em;
+    font-size: var(--text-size-mobile);
+    padding: 1.1em 1.2em 1em 1.2em;
   }
 }
