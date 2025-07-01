@@ -10,11 +10,11 @@
   text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-top: 6.5em;
+  padding-top: var(--page-padding-desktop);
 }
 
 .info-title {
-  font-size: 2.2rem;
+  font-size: var(--title-size-desktop);
   font-weight: bold;
   background: var(--gradient-accent);
   -webkit-background-clip: text;
@@ -26,7 +26,7 @@
 
 .info-subtitle {
   display: block;
-  font-size: 1.5rem;
+  font-size: var(--subtitle-size-desktop);
   font-weight: 400;
   color: var(--primary-color);
   margin-bottom: 1.2rem;
@@ -36,18 +36,18 @@
   text-align: center;
   width: 80vw;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2.5rem auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.2rem;
+  padding: 0 1em;
 }
 
 .info-description p {
   color: var(--text-secondary);
   font-weight: normal;
-  font-size: 1.08rem;
+  font-size: var(--text-size-desktop);
   margin: 0;
   line-height: 1.6;
 }
@@ -97,25 +97,72 @@
   margin-bottom: 0.3em;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .info-page {
-    padding-top: 120px;
+    padding-top: var(--page-padding-tablet);
   }
-  .info-description {
-    width: 80vw;
-    padding: 1.2rem 2vw 1rem 2vw;
-    font-size: 0.98rem;
-  }
+
   .info-title {
-    font-size: 1.8rem;
-    margin-bottom: 0.7rem;
+    font-size: var(--title-size-tablet);
+  }
+
+  .info-subtitle {
+    font-size: var(--subtitle-size-tablet);
+  }
+
+  .info-description p {
+    font-size: var(--text-size-tablet);
   }
 
   .info-section {
-    padding: 1.2rem 2vw 1rem 2vw;
-    font-size: 0.98rem;
+    padding: 1.5rem 2vw 1.2rem 2vw;
   }
+
+  .info-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-section p,
+  .info-section ul {
+    font-size: var(--text-size-tablet);
+  }
+}
+
+@media (max-width: 600px) {
+  .info-page {
+    padding-top: var(--page-padding-mobile);
+  }
+
+  .info-title {
+    font-size: var(--title-size-mobile);
+    margin-bottom: 0.7rem;
+  }
+
+  .info-subtitle {
+    font-size: var(--subtitle-size-mobile);
+  }
+
+  .info-description {
+    width: 90vw;
+    padding: 0 0.5em;
+    margin-top: 1.5rem;
+  }
+
+  .info-description p {
+    font-size: var(--text-size-mobile);
+  }
+
+  .info-section {
+    width: 90vw;
+    padding: 2rem 2vw 1.5rem 2vw;
+  }
+
   .info-section h2 {
     font-size: 1.08rem;
+  }
+
+  .info-section p,
+  .info-section ul {
+    font-size: var(--text-size-mobile);
   }
 }

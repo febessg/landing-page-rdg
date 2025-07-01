@@ -7,13 +7,13 @@
   justify-content: flex-start;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 6.5em;
+  padding-top: var(--page-padding-desktop);
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .projetos-title {
-  font-size: 2.2rem;
+  font-size: var(--title-size-desktop);
   font-weight: bold;
   background: var(--gradient-accent);
   -webkit-background-clip: text;
@@ -24,15 +24,17 @@
 }
 
 .projetos-description {
-  font-size: 1.15rem;
+  font-size: var(--text-size-desktop);
   color: var(--text-secondary);
   max-width: 700px;
   margin-bottom: 2.5rem;
+  text-align: center;
+  padding: 0 1em;
 }
 
 .projetos-subtitle {
   display: block;
-  font-size: 1.5rem;
+  font-size: var(--subtitle-size-desktop);
   font-weight: 400;
   color: var(--primary-color);
   margin-bottom: 1.2rem;
@@ -79,6 +81,22 @@
 }
 
 @media (max-width: 900px) {
+  .projetos-page {
+    padding-top: var(--page-padding-tablet);
+  }
+
+  .projetos-title {
+    font-size: var(--title-size-tablet);
+  }
+
+  .projetos-description {
+    font-size: var(--text-size-tablet);
+  }
+
+  .projetos-subtitle {
+    font-size: var(--subtitle-size-tablet);
+  }
+
   .projetos-list,
   .projeto-item {
     max-width: 98vw;
@@ -91,35 +109,45 @@
 
 @media (max-width: 600px) {
   .projetos-page {
-    padding-top: 120px;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    padding-top: var(--page-padding-mobile);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
+
   .projetos-title {
-    font-size: 1.3rem;
+    font-size: var(--title-size-mobile);
     margin-bottom: 0.7rem;
   }
+
   .projetos-description {
-    font-size: 0.98rem;
+    font-size: var(--text-size-mobile);
+    width: 90vw;
+    padding: 0 0.5em;
   }
+
   .projetos-subtitle {
-    font-size: 0.92rem;
+    font-size: var(--subtitle-size-mobile);
     margin-bottom: 0.7rem;
   }
+
   .projetos-list {
     gap: 0.7rem;
   }
+
   .projeto-item {
-    padding: 0.7em 0.2em 0.7em 0.2em;
-    font-size: 0.96rem;
+    padding: 0.7em 0.5em 0.7em 0.5em;
+    font-size: var(--text-size-mobile);
   }
+
   .projeto-img {
     height: 130px;
   }
+
   .projeto-titulo {
     font-size: 1.02rem;
   }
+
   .projeto-descricao {
-    font-size: 0.93rem;
+    font-size: var(--text-size-mobile);
   }
 }

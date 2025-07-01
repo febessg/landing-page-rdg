@@ -75,17 +75,24 @@
 @media (max-width: 900px) {
   .projeto-item {
     max-width: 98vw;
+    padding: 1.2em 1em 1em 1em;
   }
   .projeto-img,
   .projeto-info {
     max-width: 98vw;
   }
+  .projeto-titulo {
+    font-size: 1.15rem;
+  }
+  .projeto-descricao {
+    font-size: var(--text-size-tablet);
+  }
 }
 
 @media (max-width: 600px) {
   .projeto-item {
-    padding: 0.7em 0.2em 0.7em 0.2em;
-    font-size: 0.96rem;
+    padding: 0.7em 0.5em 0.7em 0.5em;
+    font-size: var(--text-size-mobile);
   }
   .projeto-img {
     height: 130px;
@@ -94,6 +101,6 @@
     font-size: 1.02rem;
   }
   .projeto-descricao {
-    font-size: 0.93rem;
+    font-size: var(--text-size-mobile);
   }
 }

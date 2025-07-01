@@ -7,11 +7,11 @@
   justify-content: flex-start;
   box-sizing: border-box;
   text-align: center;
-  padding-top: 6.5em;
+  padding-top: var(--page-padding-desktop);
 }
 
 .contato-title {
-  font-size: 2.2rem;
+  font-size: var(--title-size-desktop);
   font-weight: bold;
   background: var(--gradient-accent);
   -webkit-background-clip: text;
@@ -23,7 +23,7 @@
 
 .contato-subtitle {
   display: block;
-  font-size: 1.5rem;
+  font-size: var(--subtitle-size-desktop);
   font-weight: 400;
   color: var(--primary-color);
   margin-bottom: 1.2rem;
@@ -32,10 +32,12 @@
 }
 
 .contato-description {
-  font-size: 1.15rem;
+  font-size: var(--text-size-desktop);
   color: var(--text-secondary);
   max-width: 700px;
   margin-bottom: 2.5rem;
+  text-align: center;
+  padding: 0 1em;
 }
 
 .contato-info {
@@ -65,31 +67,53 @@
   color: var(--primary-color);
 }
 
-@media (max-width: 750px) {
-  .contato-page {
-    padding-top: 200px;
-  }
-  .contato-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.7rem;
-  }
-  .contato-description {
-    font-size: 0.98rem;
-  }
-}
-
 @media (max-width: 900px) {
+  .contato-page {
+    padding-top: var(--page-padding-tablet);
+  }
+
+  .contato-title {
+    font-size: var(--title-size-tablet);
+  }
+
+  .contato-subtitle {
+    font-size: var(--subtitle-size-tablet);
+  }
+
+  .contato-description {
+    font-size: var(--text-size-tablet);
+  }
+
   .contato-info {
     max-width: 80vw;
-    padding: 1.2rem 4vw;
-    font-size: 0.98rem;
+    padding: 1.5rem 4vw;
+    font-size: var(--text-size-tablet);
   }
 }
 
 @media (max-width: 600px) {
+  .contato-page {
+    padding-top: var(--page-padding-mobile);
+  }
+
+  .contato-title {
+    font-size: var(--title-size-mobile);
+    margin-bottom: 0.7rem;
+  }
+
+  .contato-subtitle {
+    font-size: var(--subtitle-size-mobile);
+  }
+
+  .contato-description {
+    font-size: var(--text-size-mobile);
+    width: 90vw;
+    padding: 0 0.5em;
+  }
+
   .contato-info {
-    max-width: 80vw;
-    padding: 1rem 2vw;
-    font-size: 0.95rem;
+    max-width: 90vw;
+    padding: 1.2rem 2vw;
+    font-size: var(--text-size-mobile);
   }
 }
