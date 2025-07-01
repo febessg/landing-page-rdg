@@ -1,0 +1,53 @@
+:root {
+  /* Esquema de cores principal - tons terrosos e neutros */
+  --primary-color: #b91c1c;
+  --secondary-color: #f59e42;
+  --accent-color: #128c7e;
+
+  /* Cores de fundo - substituindo brancos por tons neutros */
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #e9ecef;
+  --bg-tertiary: #dee2e6;
+  --bg-card: #ffffff;
+  --bg-navbar: rgba(255, 255, 255, 0.95);
+
+  /* Cores de texto */
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --text-muted: #6c757d;
+  --text-light: #ffffff;
+
+  /* Cores de borda e sombras */
+  --border-color: #ced4da;
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  --gradient-secondary: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  --gradient-accent: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

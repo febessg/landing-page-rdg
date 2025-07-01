@@ -1,5 +1,5 @@
 .servicos-page {
-  background: #fff;
+  background: var(--gradient-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,14 +13,17 @@
 .servicos-title {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #b91c1c;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1.2rem;
   margin-top: 0;
 }
 
 .servicos-description {
   font-size: 1.15rem;
-  color: #222;
+  color: var(--text-secondary);
   max-width: 700px;
   margin-bottom: 2.5rem;
 }
@@ -29,7 +32,7 @@
   display: block;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #b91c1c;
+  color: var(--primary-color);
   margin-bottom: 1.2rem;
   margin-top: -0.5rem;
   letter-spacing: 0.01em;
@@ -47,26 +50,28 @@
 }
 
 .servicos-list li {
-  background: #f3f4f6;
-  border-radius: 8px;
+  background: var(--bg-card);
+  border-radius: 12px;
   padding: 1.1em 1.2em 1em 1.2em;
   margin-bottom: 0.7em;
-  box-shadow: 0 2px 8px #0001;
-  color: #222;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
   font-size: 1.08rem;
   line-height: 1.6;
   list-style: none;
-  transition: box-shadow 0.2s;
+  transition: all 0.3s ease;
 }
 
 .servicos-list li strong {
-  color: #b91c1c;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 1.08rem;
 }
 
 .servicos-list li:hover {
-  box-shadow: 0 4px 16px #0002;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
 }
 
 @media (max-width: 750px) {
