@@ -80,8 +80,11 @@ const ProjetosPage = () => {
               width={120}
               height={90}
             />
-            <div>
-              <strong>{projeto.titulo}</strong> — {projeto.descricao}
+            <div className={styles["projeto-info"]}>
+              <span className={styles["projeto-titulo"]}>{projeto.titulo}</span>
+              <span className={styles["projeto-descricao"]}>
+                {projeto.descricao}
+              </span>
             </div>
           </li>
         ))}
