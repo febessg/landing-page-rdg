@@ -8,6 +8,8 @@
   box-sizing: border-box;
   text-align: center;
   padding-top: var(--page-padding-desktop);
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .servicos-title {
@@ -79,6 +81,8 @@
 @media (max-width: 900px) {
   .servicos-page {
     padding-top: var(--page-padding-tablet);
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .servicos-title {
@@ -94,7 +98,7 @@
   }
 
   .servicos-list {
-    max-width: 98vw;
+    max-width: 95vw;
     gap: 1rem;
   }
 
@@ -107,6 +111,8 @@
 @media (max-width: 600px) {
   .servicos-page {
     padding-top: var(--page-padding-mobile);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 
   .servicos-title {
@@ -126,7 +132,7 @@
   }
 
   .servicos-list {
-    max-width: 98vw;
+    max-width: 95vw;
     gap: 0.7rem;
   }
 
