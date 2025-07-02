@@ -6,6 +6,7 @@ import { MdMenu } from "react-icons/md";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
@@ -14,11 +15,14 @@ const Navbar = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 50);
     };
-
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 700);
+    };
     window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -39,7 +43,10 @@ const Navbar = () => {
           onClick={toggleMenu}
           aria-label="Abrir/fechar menu"
         >
-          <MdMenu size={32} color="#b91c1c" />
+          <MdMenu
+            size={32}
+            color={isMobile && !isScrolled ? "#fff" : "#b91c1c"}
+          />
         </button>
         <ul
           className={
