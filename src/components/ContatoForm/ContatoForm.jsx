@@ -9,7 +9,6 @@ const ContatoForm = () => {
     assunto: "",
     mensagem: "",
   });
-  const [enviado, setEnviado] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -17,8 +16,12 @@ const ContatoForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEnviado(true);
-    // Aqui você pode adicionar lógica para envio real
+    const destinatario = "contato@rdgconstrucoes.com.br";
+    const assunto = encodeURIComponent(form.assunto || "Contato pelo site");
+    const corpo = encodeURIComponent(
+      `Nome: ${form.nome}\nE-mail: ${form.email}\nTelefone: ${form.telefone}\n\n${form.mensagem}`
+    );
+    window.location.href = `mailto:${destinatario}?subject=${assunto}&body=${corpo}`;
   };
 
   return (
@@ -74,11 +77,6 @@ const ContatoForm = () => {
         />
       </label>
       <button type="submit">Enviar</button>
-      {enviado && (
-        <p className={styles["mensagem-sucesso"]}>
-          Mensagem enviada com sucesso!
-        </p>
-      )}
     </form>
   );
 };
