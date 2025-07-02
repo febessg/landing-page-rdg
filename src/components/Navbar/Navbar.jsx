@@ -46,13 +46,13 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/sobre">Sobre</a>
+            <a href="/sobre">Sobre Nós</a>
           </li>
           <li>
             <a href="/contato">Contato</a>
           </li>
           <li>
-            <a href="/servicos">Nossos Serviços</a>
+            <a href="/servicos">Serviços</a>
           </li>
           <li>
             <a href="/projetos">Projetos</a>
