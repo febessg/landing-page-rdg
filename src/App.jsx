@@ -7,6 +7,7 @@ import ServicosPage from "./pages/ServicosPage/ServicosPage";
 import ContatoPage from "./pages/ContatoPage/ContatoPage";
 import ProjetosPage from "./pages/ProjetosPage/ProjetosPage";
 import { Routes, Route } from "react-router-dom";
+import WsappButton from "./components/WsappButton/WsappButton";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <WsappButton />
     </div>
   );
 }
