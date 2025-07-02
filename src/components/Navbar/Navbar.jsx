@@ -23,7 +23,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
+    <nav
+      className={`${styles.navbar} ${!isScrolled ? styles.fixed : ""} ${
+        isScrolled ? styles.scrolled : ""
+      }`}
+    >
       <div className={styles["navbar-content"]}>
         <div className={styles["navbar-logo"]}>
           <a href="/">

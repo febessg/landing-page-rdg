@@ -23,6 +23,18 @@
   border-bottom: 1px solid rgba(206, 212, 218, 0.6);
 }
 
+.navbar.fixed {
+  background: #b91c1c;
+}
+
+.navbar.fixed .navbar-links li a {
+  color: #fff;
+}
+
+.navbar.fixed .navbar-links li a:hover {
+  color: #fff;
+}
+
 .navbar-content {
   display: flex;
   align-items: center;
@@ -144,4 +156,12 @@
   .navbar-links li a {
     display: block;
   }
+}
+
+.navbar.fixed .navbar-links li a::after {
+  background: #f59e42;
+}
+
+.navbar.fixed .navbar-logo img {
+  filter: brightness(1.25) drop-shadow(0 1px 6px rgba(0, 0, 0, 0.18));
 }
