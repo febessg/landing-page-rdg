@@ -53,33 +53,6 @@
   gap: 1.2rem;
 }
 
-/* Estilos do projeto-item são definidos no componente ProjetosCard */
-
-.projetos-list li {
-  background: var(--bg-card);
-  border-radius: 12px;
-  padding: 1.1em 1.2em 1em 1.2em;
-  margin-bottom: 0.7em;
-  box-shadow: var(--shadow-light);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  font-size: 1.08rem;
-  line-height: 1.6;
-  list-style: none;
-  transition: all 0.3s ease;
-}
-
-.projetos-list li strong {
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: 1.08rem;
-}
-
-.projetos-list li:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-medium);
-}
-
 @media (max-width: 900px) {
   .projetos-page {
     padding-top: var(--page-padding-tablet);
