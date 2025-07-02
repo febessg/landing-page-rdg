@@ -43,10 +43,15 @@ const HeroPage = () => {
           futuro.{" "}
         </p>
       </div>
-      <button className={styles["whatsapp-btn"]}>
+      <a
+        className={styles["whatsapp-btn"]}
+        href="https://wa.me/5548996733731?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FaWhatsapp size={22} style={{ marginRight: 8 }} />
         Solicite um orçamento
-      </button>
+      </a>
     </section>
   );
 };
