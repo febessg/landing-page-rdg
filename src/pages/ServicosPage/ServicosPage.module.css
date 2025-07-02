@@ -8,8 +8,6 @@
   box-sizing: border-box;
   text-align: center;
   padding-top: var(--page-padding-desktop);
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 .servicos-title {
@@ -44,22 +42,19 @@
 }
 
 .servicos-list {
-  width: 80vw;
-  max-width: 900px;
-  margin: 2rem auto 0 auto;
-  padding-left: 1.2em;
+  width: 100vw;
   text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .servicos-list li {
   background: var(--bg-card);
-  border-radius: 12px;
-  padding: 1.1em 1.2em 1em 1.2em;
-  margin-bottom: 0.7em;
-  box-shadow: var(--shadow-light);
+  padding: 2rem 12vw 2rem 12vw;
+  width: 100vw;
   color: var(--text-primary);
   font-size: 1.08rem;
   line-height: 1.6;
@@ -81,8 +76,6 @@
 @media (max-width: 900px) {
   .servicos-page {
     padding-top: var(--page-padding-tablet);
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
   .servicos-title {
@@ -98,13 +91,11 @@
   }
 
   .servicos-list {
-    max-width: 95vw;
     gap: 1rem;
   }
 
   .servicos-list li {
-    font-size: var(--text-size-tablet);
-    padding: 1em 1em 0.9em 1em;
+    padding: 1.5rem 10vw 1.5rem 10vw;
   }
 }
 
@@ -132,12 +123,10 @@
   }
 
   .servicos-list {
-    max-width: 95vw;
     gap: 0.7rem;
   }
 
   .servicos-list li {
-    font-size: var(--text-size-mobile);
-    padding: 1.1em 1.2em 1em 1.2em;
+    padding: 2rem 10vw 2rem 10vw;
   }
 }
