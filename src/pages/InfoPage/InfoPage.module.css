@@ -53,11 +53,9 @@
 
 .info-section {
   background: var(--bg-card);
-  border-radius: 16px;
   margin: 2.2rem auto 0 auto;
-  padding: 2rem 2vw 1.5rem 2vw;
-  width: 80vw;
-  max-width: 900px;
+  padding: 2rem 20vw 2rem 20vw;
+  width: 100vw;
   box-sizing: border-box;
   box-shadow: var(--shadow-light);
   text-align: left;
@@ -113,7 +111,7 @@
   }
 
   .info-section {
-    padding: 1.5rem 2vw 1.2rem 2vw;
+    padding: 1.5rem 10vw 1.5rem 10vw;
   }
 
   .info-section h2 {
@@ -150,8 +148,7 @@
   }
 
   .info-section {
-    width: 90vw;
-    padding: 2rem 2vw 1.5rem 2vw;
+    padding: 2rem 10vw 2rem 10vw;
   }
 
   .info-section h2 {
