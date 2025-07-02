@@ -4,17 +4,15 @@
   align-items: center;
   gap: 1.1rem;
   background: var(--bg-card);
-  border-radius: 16px;
-  padding: 1.5em 1.2em 1.2em 1.2em;
-  margin-bottom: 1.2em;
+  padding: 2rem 20vw 2rem 20vw;
+  margin: 1.5rem auto 0 auto;
   box-shadow: var(--shadow-light);
   color: var(--text-primary);
   font-size: 1.08rem;
   line-height: 1.6;
   list-style: none;
   transition: all 0.3s ease;
-  width: 100%;
-  max-width: 900px;
+  width: 100vw;
   box-sizing: border-box;
 }
 
@@ -73,8 +71,7 @@
 
 @media (max-width: 900px) {
   .projeto-item {
-    max-width: 98vw;
-    padding: 1.2em 1em 1em 1em;
+    padding: 1.5rem 10vw 1.5rem 10vw;
   }
   .projeto-img,
   .projeto-info {
@@ -90,7 +87,7 @@
 
 @media (max-width: 600px) {
   .projeto-item {
-    padding: 0.7em 0.5em 0.7em 0.5em;
+    padding: 2rem 10vw 2rem 10vw;
     font-size: var(--text-size-mobile);
   }
   .projeto-img {
